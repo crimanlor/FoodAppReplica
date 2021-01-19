@@ -5,146 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Catamaran:wght@500&display=swap"
       rel="stylesheet"
     />
-    <title>Componentes</title>
+    <title>Food app</title>
   </head>
   <body>
-    <section class="atomsSection">
-      <h1>Atoms</h1>
-      <img
-        class="logo"
-        src="https://andreabcm.github.io/Proyecto-final/img/logo.png"
-        alt="logo"
-      />
-      <article class="icons">
-        <img
-          class="icon"
-          src="https://andreabcm.github.io/Proyecto-final/img/footer/home.svg"
-          alt="home icon"
-        />
-        <img
-          class="icon"
-          src="https://andreabcm.github.io/Proyecto-final/img/footer/bolsalike.svg"
-          alt="chat icon"
-        />
-        <img class="icon" src="./icons/buy-icon.svg" alt="buy icon" />
-        <img
-          class="icon"
-          src="https://andreabcm.github.io/Proyecto-final/img/footer/corazon.svg"
-          alt="like icon"
-        />
-        <img
-          class="icon"
-          src="https://andreabcm.github.io/Proyecto-final/img/footer/usuario.svg"
-          alt="profile icon"
-        />
-        <img class="icon" src="./icons/icon-emoji.svg" alt="emoji" />
-      </article>
-      <article class="buttons">
-        <button class="buyButton">
+    <header>
+      <h3>Food house</h3>
+      <h1>Food for home</h1>
+      <h4>Lorem ipsum dolor sit amet, consectetur.</h4>
+      <section class="carouselCardsProduct">
+        <article class="cardIconProduct">
           <img
-            class="icon"
-            src="https://andreabcm.github.io/Proyecto-final/img/footer/bolsa.svg"
-            alt="buy icon"
+            src="./icons/breakfast.svg"
+            alt="icon product"
+            class="iconProduct"
           />
-        </button>
-        <button class="arrowButton">
-          <span
-            class="iconify"
-            data-icon="ic:sharp-arrow-back-ios"
-            data-inline="false"
-          ></span>
-        </button>
-        <button class="arrowButton">
-          <span
-            class="iconify"
-            data-icon="ic:sharp-arrow-forward-ios"
-            data-inline="false"
-          ></span>
-        </button>
-        <button class="sendButton">Enviar pedido</button>
-        <input
-          class="inputUserName"
-          type="text"
-          name="name"
-          placeholder="Nombre"
-          required="name"
-        />
-      </article>
-      <article class="images">
+          <h5>Breakfast</h5>
+        </article>
+        <article class="cardIconProduct">
+          <img
+            src="./icons/hamburger.svg"
+            alt="icon product"
+            class="iconProduct"
+          />
+          <h5>Fast Food</h5>
+        </article>
+        <article class="cardIconProduct">
+          <img src="./icons/steak.svg" alt="icon product" class="iconProduct" />
+          <h5>Dinner</h5>
+        </article>
+        <article class="cardIconProduct">
+          <img
+            src="./icons/cake-slice.svg"
+            alt="icon product"
+            class="iconProduct"
+          />
+          <h5>Dessert</h5>
+        </article>
+      </section>
+    </header>
+    <section class="allProducts">
+      <article class="cardProduct">
         <img
           class="image"
           src="https://andreabcm.github.io/Proyecto-final/img/platos/desayuno01.jpg"
           alt="food image"
         />
-      </article>
-    </section>
-    <section class="molecules">
-      <h1>Molecules</h1>
-      <article class="unitsContainer">
-        <button class="unitsButton subtractButton">
-          <span
-            class="iconify"
-            data-icon="grommet-icons:form-subtract"
-            data-inline="false"
-          ></span>
-        </button>
-        <input
-          class="unitsInput"
-          name="units"
-          min="0"
-          max="100"
-          required="required"
-          placeholder="nº"
-        />
-        <button class="unitsButton addButton">
-          <span
-            class="iconify"
-            data-icon="carbon:add"
-            data-inline="false"
-          ></span>
-        </button>
-      </article>
-      <article class="cardIconProduct">
-        <img
-          src="https://andreabcm.github.io/Proyecto-final/img/slider/tapas.svg"
-          alt="icon product"
-          class="iconProduct"
-        />
-        <h4>Tapas</h4>
-      </article>
-    </section>
-    <section class="Organisms">
-      <h1>Organisms</h1>
-      <article class="orderContainer">
-        <div class="nameContainer">
-          <input
-            class="inputUserName"
-            type="text"
-            name="name"
-            placeholder="Nombre"
-            required="name"
-          />
-          <img class="icon emoji" src="./icons/icon-emoji.svg" alt="emoji" />
+        <div class="infoProduct">
+          <h3 class="productPrice">$52.00</h3>
+          <h3 class="productTitle">Producto</h3>
+          <h4>Lorem ipsum dolor sit amet, consectetur.</h4>
+          <article class="unitsContainer">
+            <button class="unitsButton subtractButton">
+              <span
+                class="iconify"
+                data-icon="grommet-icons:form-subtract"
+                data-inline="false"
+              ></span>
+            </button>
+            <input
+              class="unitsInput"
+              name="units"
+              min="0"
+              max="100"
+              required="required"
+              placeholder="nº"
+            />
+            <button class="unitsButton addButton">
+              <span
+                class="iconify"
+                data-icon="carbon:add"
+                data-inline="false"
+              ></span>
+            </button>
+          </article>
         </div>
-        <div class="infoOrder">
-          <ul class="products">
-            <li>Texto</li>
-            <li>Texto</li>
-            <li>Texto</li>
-          </ul>
-          <ul class="productsPrices">
-            <li>€</li>
-            <li>€</li>
-            <li>€</li>
-          </ul>
-        </div>
-        <button class="sendButton">Enviar pedido</button>
       </article>
       <article class="cardProduct">
         <img
@@ -153,8 +91,45 @@
           alt="food image"
         />
         <div class="infoProduct">
-          <h3>0.00€</h3>
-          <h4>Producto</h4>
+          <h3 class="productPrice">$52.00</h3>
+          <h3 class="productTitle">Producto</h3>
+          <h4>Lorem ipsum dolor sit amet, consectetur.</h4>
+          <article class="unitsContainer">
+            <button class="unitsButton subtractButton">
+              <span
+                class="iconify"
+                data-icon="grommet-icons:form-subtract"
+                data-inline="false"
+              ></span>
+            </button>
+            <input
+              class="unitsInput"
+              name="units"
+              min="0"
+              max="100"
+              required="required"
+              placeholder="nº"
+            />
+            <button class="unitsButton addButton">
+              <span
+                class="iconify"
+                data-icon="carbon:add"
+                data-inline="false"
+              ></span>
+            </button>
+          </article>
+        </div>
+      </article>
+      <article class="cardProduct">
+        <img
+          class="image"
+          src="https://andreabcm.github.io/Proyecto-final/img/platos/desayuno01.jpg"
+          alt="food image"
+        />
+        <div class="infoProduct">
+          <h3 class="productPrice">$52.00</h3>
+          <h3 class="productTitle">Producto</h3>
+          <h4>Lorem ipsum dolor sit amet, consectetur.</h4>
           <article class="unitsContainer">
             <button class="unitsButton subtractButton">
               <span
@@ -182,43 +157,39 @@
         </div>
       </article>
     </section>
-    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
-    <footer class="footer">
-      <article class="footerOptions">
-        <button>
-          <img
-            class="icon"
-            src="https://andreabcm.github.io/Proyecto-final/img/footer/home.svg"
-            alt="home icon"
-          />
-        </button>
-        <button>
-          <img
-            class="icon"
-            src="https://andreabcm.github.io/Proyecto-final/img/footer/bolsalike.svg"
-            alt="chat icon"
-          />
-        </button>
-        <button>
-          <img
-            class="icon"
-            src="https://andreabcm.github.io/Proyecto-final/img/footer/corazon.svg"
-            alt="like icon"
-          />
-        </button>
-        <button>
-          <img
-            class="icon"
-            src="https://andreabcm.github.io/Proyecto-final/img/footer/usuario.svg"
-            alt="profile icon"
-          />
-        </button>
-      </article>
+    <section class="buySection">
       <button class="buyButton">
         <img
           class="icon"
           src="https://andreabcm.github.io/Proyecto-final/img/footer/bolsa.svg"
           alt="buy icon"
+        />
+      </button>
+    </section>
+    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+    <footer class="footer">
+      <button>
+        <img
+          class="icon"
+          src="https://andreabcm.github.io/Proyecto-final/img/footer/home.svg"
+          alt="home icon"
+        />
+      </button>
+      <button>
+        <img class="icon" src="./icons/icon-bag.svg" alt="mail icon" />
+      </button>
+      <button>
+        <img
+          class="icon"
+          src="https://andreabcm.github.io/Proyecto-final/img/footer/corazon.svg"
+          alt="like icon"
+        />
+      </button>
+      <button>
+        <img
+          class="icon"
+          src="https://andreabcm.github.io/Proyecto-final/img/footer/usuario.svg"
+          alt="profile icon"
         />
       </button>
     </footer>
